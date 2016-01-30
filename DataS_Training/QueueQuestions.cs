@@ -8,16 +8,10 @@ namespace DataS_Training
 {
     public class QueueQuestions
     {
-        // implement queue by two stacks
-    }
-
-
-    public class QueueByTwoST
-    {
-        private Stack<string> stk1;
-
-        private Stack<string> stk2;
-
+         // implement Queue by two Stacks  // My ADT folder -> QueueByTwoStacks class
 
     }
+
+
+    
 }

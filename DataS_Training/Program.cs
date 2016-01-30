@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DataS_Training.My_ADT;
 
 namespace DataS_Training
 {
@@ -11,27 +12,21 @@ namespace DataS_Training
     {
         static void Main(string[] args)
         {
-            string x = "Alia";
-            Console.WriteLine(uniquestring(x));
-           // Console.WriteLine('c' - 'a' + 1);
+            string x = "ABC";
+            StringQuestions sq = new StringQuestions();
+            // sq.GetAllPermutations(x.ToCharArray() , 0 , x.Length -1);\\
+
+            QueueQuestions qq = new QueueQuestions();
+            QueueByTwoStacks test = new QueueByTwoStacks();
+
+            test.Enque("1");
+            test.Enque("2");
+            test.Enque("3");
+            test.Enque("4");
+
+            Console.WriteLine(test.Deque());
+            // Console.WriteLine('c' - 'a' + 1);
         }
 
-        static bool uniquestring(string str)
-        {
-            if (str.Length > 256) return false;
-
-            bool[] chars = new bool[256];
-            for (int i = 0; i < str.Length; i++)
-            {
-                int val = str[i];
-                
-                if (chars[val])
-                    return false;
-
-                chars[val] = true;
-            }
-
-            return true;
-        }
     }
 }
