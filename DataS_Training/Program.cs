@@ -12,21 +12,34 @@ namespace DataS_Training
     {
         static void Main(string[] args)
         {
-            string x = "ABC";
-            StringQuestions sq = new StringQuestions();
-            // sq.GetAllPermutations(x.ToCharArray() , 0 , x.Length -1);\\
+            MyLinkedList LL = new MyLinkedList();
+            LL.Add(1);
+            LL.Add(2);
+            LL.Add(3);
 
-            QueueQuestions qq = new QueueQuestions();
-            QueueByTwoStacks test = new QueueByTwoStacks();
-
-            test.Enque("1");
-            test.Enque("2");
-            test.Enque("3");
-            test.Enque("4");
-
-            Console.WriteLine(test.Deque());
-            // Console.WriteLine('c' - 'a' + 1);
+            Console.WriteLine(LL.Dequeue());
+           // LL.RemoveDuplicates();
+            LL.Travese();
         }
 
+
+        //string x = "ABC";
+        //StringQuestions sq = new StringQuestions();
+        //string one = "ABC  ";
+        //string two = "Cba";
+        ////sq.GetAllPermutations(x.ToCharArray() , 0 , x.Length -1);
+        ////Console.WriteLine(sq.IsPermutation(one, two));
+        //Console.WriteLine(sq.CompressString("aabcccccaaa"));
+
+        //QueueQuestions qq = new QueueQuestions();
+        //QueueByTwoStacks test = new QueueByTwoStacks();
+
+        //test.Enque("1");
+        //test.Enque("2");
+        //test.Enque("3");
+        //test.Enque("4");
+
+        //Console.WriteLine(test.Deque());
+        // Console.WriteLine('c' - 'a' + 1);
     }
 }
