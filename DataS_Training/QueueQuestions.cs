@@ -9,7 +9,7 @@ namespace DataS_Training
     public class QueueQuestions
     {
          // implement Queue by two Stacks  // My ADT folder -> QueueByTwoStacks class
-
+    int x;
     }
 
 
