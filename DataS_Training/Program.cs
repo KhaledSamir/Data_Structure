@@ -12,7 +12,7 @@ namespace DataS_Training
     {
         static void Main(string[] args)
         {
-             LL = new MyLinkedList();
+            MyLinkedList LL = new MyLinkedList();
             LL.Add(1);
             LL.Add(2);
             LL.Add(3);
