@@ -10,7 +10,7 @@ namespace DataS_Training
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main(string[] args
         {
             MyLinkedList LL = new MyLinkedList();
             LL.Add(1);
